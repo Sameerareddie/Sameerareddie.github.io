@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+header{
+  position: fixed;
+  top: 0;left: 0;right: 0;
+  background: black;
+  box-shadow: 0 5px 10px rgba(0,0,0, 0.4);
+  padding: 20px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+header .logo{
+  font-weight: bolder;
+  font-size: 25px;
+  color: #f1f1f1;
+}
+
+header .navbar ul li{
+  position: relative;
+  float: left;
+}
+
+header .navbar ul li a{
+  font-size: 20px;
+  padding: 20px;
+  color: #f1f1f1;
+  display: block;
+}
+
+header .navbar ul li a:hover{
+  background: #a99a86;
+  color: #FFFFFF;
+}
+
+/*
+.navbar{
+    position:fixed;
+    background:black;
+    width: 100%;
+    padding:15px 0;
+    top: 0;
+}
+.navbar .Menu li a{
+    color: white;
+    font-size: 15px;
+    margin-left: 50px;
+}
+.navbar .Menu li{
+    display: inline-block; 
+}
+.max-width{
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 0 100px;
+}
+/* body{
+    background-color: darkgrey;
+} 
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  */
+  
+  /* Position text in the middle of the page/image */
+  .bg-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 70%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 50%;
+    padding: 30px 30px;
+    text-align: left;
+    box-sizing: content-box;
+    
+  }
+
+  .bg-text h1{
+    opacity: 1;
+    font-size:30px;
+  }
+
+  .bg-text h2{
+    opacity: 0.7;
+  }
+
+  .bg-text p{
+    opacity: 0.7;
+  }
+
+  img {
+    display: block;
+    margin-left: 30px;
+    margin-right: auto;
+  }
+
+  /*
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #a99a86;
+    background-image: radial-gradient(#FFFFFF,black);
+  }
+*/
+  .button {
+    background-color: black;
+    color:#f1f1f1;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 130px;
+    height: 75px;
+    position: absolute;   /* position relative to outer box */
+    top: 80%;   
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid grey;
+    border-style: solid;
+    border-color: gray;
+    margin-left: 10px;margin-right: 10px;
+    border-radius: 15px;
+  }
+  
+  .aboutme img{
+   height: 350px;
+   float :left;
+   margin-top: 50px;
+  }
+
+  /* about page main*/
+  main {
+    margin-top: 70px; /* Adjust this value to create spacing between the navbar and the paragraph */
+    padding: 20px;
+    align-items: center;
+    display: flex;
+    float: left;  
+    font-family: 'Brush Script', cursive;
+  }
+
+  .contactinfo{
+    margin-top: 280px; /* Adjust this value to create spacing between the navbar and the paragraph */
+    padding: 20px;
+    align-items: center;
+    display: flex;
+    float: left;  
+    font-family: 'Brush Script', cursive;
+    font-size: 25px;
+  }
+
+  .content {
+    display: grid;
+    align-items: center;
+  }
+
+  section{
+    padding: 40px 15%;
+  }
+
+  .contactform h1{
+    font-size: 50px;
+    font-family: 'Brush Script', cursive;
+    margin-bottom: 20px;
+  }
+
+  span{
+    color: red;
+  }
+
+  .contactform{
+    position: relative;
+  }
+
+  .contactform form input{
+    width:100%;
+    padding: 17px;
+    border: none;
+    outline: none;
+    border: radius 10px; ;
+    display: grid;
+    height: 10px;
+     
+  }
+
+
+
