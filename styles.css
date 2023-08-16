@@ -5,7 +5,6 @@
   box-sizing: border-box;
 }
 
-/* Basic styling */
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
@@ -21,7 +20,6 @@ nav {
   align-items: center;
   padding: 10px 20px;
 }
-
 
 .nav-links {
   list-style: none;
@@ -42,6 +40,9 @@ nav {
   color: #ffca28;
 }
 
+.logo a:hover {
+  color: #ffca28;
+}
 header, main, footer {
   max-width: 1200px;
   margin: 0 auto;
@@ -54,8 +55,6 @@ header {
   color: whitesmoke;
 }
 
-
-
 .about-section {
   padding: 20px;
 }
@@ -63,16 +62,14 @@ header {
 footer {
   text-align: center;
   background-color: #ddd;
-
+  font-family: Arial, Helvetica, sans-serif;
 }
-
-
+ 
+.contact-section {
+    padding: 100px;
+}
   
-  .contact-section {
-    padding: 20px;
-  }
-  
-  form {
+form {
     display: flex;
     flex-direction: column;
   }
@@ -137,7 +134,6 @@ footer {
     border-radius: 5px;
   }
   
-
   .portfolio-section2 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -150,20 +146,18 @@ footer {
     text-decoration: none;
     color: white;
     font-style: italic;
+    color:  burlywood;
   }
   
   .portfolio-item img {
     max-width: 100%;
     border-radius: 5px;
   }
-  
-  footer {
-    text-align: center;
-    background-color: #ddd;
-    padding: 10px 0;
-  }
-      
 
+  .portfolio-item:hover {
+    transform: scale(1.05);
+  }
+  
   .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -177,6 +171,10 @@ footer {
     padding: 5px;
     font-size: 1.5rem;
     font-family: cursive;
+  }
+
+  .grid-item h2 {
+    color:  burlywood;
   }
 
  .button a{
@@ -196,12 +194,6 @@ footer {
     font-size: 18px;
     margin-bottom: 10px;
   }
-  
-  footer {
-    text-align: center;
-    background-color: #ddd;
-    padding: 10px 0;
-  }
 
   .logo a{
     display: flex;
@@ -212,7 +204,7 @@ footer {
   }
   
   .logo img {
-    width: 40px; /* Adjust the size as needed */
+    width: 40px;
     height: auto;
     margin-right: 10px;
   }
@@ -222,9 +214,7 @@ footer {
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-  }
-
-  
+  } 
   .about-content {
     flex: 1;
     padding-right: 20px;
@@ -233,9 +223,7 @@ footer {
   .about-image img {    
     height: 350px;
   }
-  
-  
-  
+    
   .address,
 .business-hours {
     margin-top: 20px;
@@ -248,6 +236,22 @@ footer {
   transition: color 0.3s;
   color: blue;
   
+}
+
+
+
+.available-services p{
+  height: 150px;
+  text-align: center;
+  font-style: italic;
+  color:whitesmoke
+}
+
+.available-services h2{
+  height: 100px;
+  text-align: center;
+  color:burlywood;
+  font-family:dancingscript-regular,dancing script,cursive;
 }
 
 .social-media a:hover {
@@ -275,5 +279,32 @@ footer {
   margin-top: 20px;
 }
   
-  
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.photo {
+  flex: 1;
+  background-color:black;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  text-align: center;
+}
+
+.photo img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+
+.photo:hover {
+  transform: scale(1.05);
+}
+
+
   
